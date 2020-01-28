@@ -49,7 +49,7 @@ int i = 0, j = 0;
 //
 void setup() {
   Wire.begin();
-  Wire.setClock(1000); // 1kHz I2C clock. Comment this line if having compilation difficulties
+  Wire.setClock(1000); // 1kHz I2C clock.
   Serial.begin(115200);
 mpu.initialize();
   devStatus = mpu.dmpInitialize();
